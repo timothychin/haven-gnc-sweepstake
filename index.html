@@ -9,7 +9,7 @@
   <meta name="author" content="Timothy Chin">
   <meta name="description" content="Haven Agency - GNC Sweepstake">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="app.js"></script>
 
 </head>
@@ -25,94 +25,119 @@
       <div class="top-nav-share">
         <p>SHARE</p>
         <ul>
-          <li><a href="facebook">INSERT FB ICON</a></li>
-          <li><a href="twitter">INSERT TWITTER ICON</a></li>
+          <li><a href="facebook"><img src="" /></a></li>
+          <li><a href="twitter"><img src="" /></a></li>
         </ul>
       </div>
     </div>
 
+    <div class="left-info">
+      <div class="sweepstake-logo">
+      </div>
+
+    </div>
+
     <div class="form-container">
-      <form>
-        <div class="form-first-name">
+      <form class="">
+        <div class="form-first-name form-inline-elements">
           <label for="first name">
             <span>FIRST NAME</span>
           </label>
           <input type="text" id="first-name" name="first-name" class="required">
         </div>
 
-        <div class="form-last-name">
+        <div class="form-last-name form-inline-elements">
           <label for="last name">
             <span>LAST NAME</span>
           </label>
           <input type="text" id="last-name" name="last-name" class="required">
         </div>
 
-        <div class="form-email">
+        <div class="form-email form-inline-elements">
           <label for="email">
             <span>EMAIL</span>
           </label>
           <input type="text" id="email" name="email" class="required email-input">
         </div>
 
-        <div class="form-confirm-email">  
+        <div class="form-confirm-email form-inline-elements">  
           <label for="confirm email">
             <span>CONFIRM EMAIL</span>
           </label>
           <input type="text" id="email-2" name="email-2" class="required email-input-2">
         </div>
 
-        <div class="form-metro">
+        <div class="form-metro form-inline-elements">
           <label for="metro area">
             <span>SELECT YOUR METRO AREA</span>
           </label>
-          <select class="required"> 
+          <select class="required">
+            <option value="unselected" class="unselected">SELECT</option> 
             <option value="los-angeles">LOS ANGELES</option>
             <option value="san-francisco">SAN FRANCISCO</option>
             <option value="irvine">IRVINE</option>
           </select>
         </div>
         
-        <div class="form-zip">
+        <div class="form-zip form-inline-elements">
           <label for="zip code">
             <span>ZIP CODE</span>
           </label>
           <input type="text" id="zip" name="zip" class="required">
         </div>
 
-        <div class="form-phone">
+        <div class="form-phone form-inline-elements">
           <label for="phone number">
             <span>PHONE NUMBER</span>
           </label>
-          <input type="text" id="phone1" name="phone1" size="3" class="required">
-          <input type="text" id="phone2" name="phone2" size="3" class="required">
-          <input type="text" id="phone3" name="phone3" size="4" class="required">
+          <input type="text" id="phone1" name="phone1" size="3" maxlength="3" class="required">
+          <input type="text" id="phone2" name="phone2" size="3" maxlength="3" class="required">
+          <input type="text" id="phone3" name="phone3" size="4" maxlength="4" class="required">
         </div>
 
-        <div class="form-agreement">
+        <div class="form-agreement form-stacked-elements">
           <input type="checkbox" id="agreement" name="agreement" class="required">
           <label for="confirm agreement to official rules">
             <span>I agree to the <a href="#">Official Rules</a></span>
           </label>
         </div>        
 
-        <div class="form-special-offers">
+        <div class="form-special-offers form-stacked-elements"">
           <input type="checkbox" id="special-offers" name="special-offers" class="optional">
           <label for="receive special offers from GNC">
             <span>Yes, I would like to receive special offers from GNC. <span class="details">*</span></span>
           </label>
         </div>
 
-        <div class="form-concert-info">
+        <div class="form-concert-info form-stacked-elements"">
           <input type="checkbox" id="concert-info" name="concert-info" class="optional">
           <label for="receive concert info from live nation">
             <span>Yes, I would like to receive concert info from Live Nation. <span class="details">*</span></span>
           </label>
         </div>
 
-      Captcha
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
         
+        <div class="form-submission">
+          <input value="ENTER NOW" type="submit" id="submit" name="submit" class="submit">
+        </div>
+
       </form>
     </div>
+
+    <div class="bottom-disclaimers">
+      <span>+Live Nation produced promoted concert at an owned and operated venus in the U.S. Tickets are subject to program availabilty, venue capacity, and age restrictions.</span>
+      <br><br>
+      <span>NO PURCHASE NECESSARY. Legal U.S. residents 18+, who reside within a 100 mile radius of New York City, NY, Chicago, IL, Houstin, TX, Cleveland, OH, or Atlanta, GA. Void where prohibited by law. Begins at 12:00PM PT on 2/9/15 and ends at 11:59 PM PT on 3/31/15. See details and <a href"#">Official Rules</a>. <strong>To enter without a GNC Game Code, <a href="#">Click here</a> for alternative method of entry.</strong></span>
+      <br><br>
+      <span>The Sponsor of the Sweepstakes is GNC® Holdings Inc. The Administrator of the Sweepstakes is Live Nation Marketing Inc., 7060 Hollywood Blvd., Los Angeles, CA 90028.</span>
+      <br>
+      <span>The Sweepstakes and all accompanying materials are ©2015 Live Nation Worldwide, Inc. Live Nation and Rock Flight are registered trademarks of Live Nations Worldwide, Inc.</span>
+    </div>
+
+  <script>
+
+  </script>
 
   </div>
   
