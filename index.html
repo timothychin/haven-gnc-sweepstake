@@ -90,8 +90,8 @@
           <label for="phone number">
             <span>PHONE NUMBER</span>
           </label>
-          <input type="text" id="phone1" name="phone1" size="3" maxlength="3" class="required">
-          <input type="text" id="phone2" name="phone2" size="3" maxlength="3" class="required">
+          <input type="text" id="phone1" name="phone1" size="3" maxlength="3" onchange="phoneCheck(this)" class="required">
+          <input type="text" id="phone2" name="phone2" size="3" maxlength="3" onchange="phoneCheck(this)" class="required">
           <input type="text" id="phone3" name="phone3" size="4" maxlength="4" class="required">
         </div>
 
@@ -125,6 +125,10 @@
       </form>
     </div>
 
+    <div class="audience-image">
+      <img src="style/assets/crowd.png" />
+    </div>
+
     <div class="bottom-disclaimers">
       <span>+Live Nation produced promoted concert at an owned and operated venus in the U.S. Tickets are subject to program availabilty, venue capacity, and age restrictions.</span>
       <br><br>
@@ -134,10 +138,6 @@
       <br>
       <span>The Sweepstakes and all accompanying materials are ©2015 Live Nation Worldwide, Inc. Live Nation and Rock Flight are registered trademarks of Live Nations Worldwide, Inc.</span>
     </div>
-
-  <script>
-
-  </script>
 
   </div>
   

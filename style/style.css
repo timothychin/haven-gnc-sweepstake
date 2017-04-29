@@ -1,0 +1,50 @@
+$dark-grey: #8c8e90;
+$red: #D71921;
+$light-grey: #EAEAEB;
+
+.page-wrapper {
+  background-image: url('assets/beams.png');
+}
+
+/*===========================================================
+FORM
+===========================================================*/
+
+.form-container {
+  background-color: white;
+  width: 40%;
+  float: right;
+  opacity: 0.95;
+  box-shadow: 2px 2px 2px #EAEAEB;
+}
+
+
+
+/*===========================================================
+BACKGROUND IMAGES
+===========================================================*/
+
+.audience-image, .bottom-disclaimers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.audience-image {
+}
+
+/*===========================================================
+BOTTOM DISCLAIMERS
+===========================================================*/
+
+.bottom-disclaimers {
+  color: #8c8e90;
+  background-color: black;
+  padding: 2em;
+  font-size: 10px;
+}
+
+.bottom-disclaimers a {
+  color: #D71921;
+}
