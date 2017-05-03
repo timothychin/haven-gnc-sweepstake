@@ -1,50 +1,445 @@
-$dark-grey: #8c8e90;
-$red: #D71921;
-$light-grey: #EAEAEB;
+html {font-family: "DINCondensed-Bold";-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+body {margin: 0;}
+a:active,a:hover {font-style: italic;}
+img {border: 0;}
+button,input,select,textarea {font-family: inherit;font-size: 100%;margin: 0;}
+button,input {line-height: normal;}
+button,select {text-transform: none;}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button;cursor: pointer;}
+button[disabled],html input[disabled] {cursor: default;}
+button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0;}
+textarea {overflow: auto;vertical-align: top;}
+table {border-collapse: collapse;border-spacing: 0;}
 
-.page-wrapper {
-  background-image: url('assets/beams.png');
+
+/*
+===========================================================
+GENERAL
+===========================================================
+*/
+
+html {
+  font-size: 13px;
+  overflow: scroll;
+  width: 100%;
 }
 
-/*===========================================================
+body {
+  width: 100%;
+}
+
+input, select {
+  width: 10em;
+  height: 2em;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border: 1px solid #8C8E90;
+  background-color: #EAEAEB;
+  font-size: 18px;
+}
+
+input, span {
+  padding: 3px;
+}
+
+sup {
+  font-size: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+===========================================================
+MAIN
+===========================================================
+*/
+
+.wrapper {
+  width: 100%;
+  height: 900px;
+  position: absolute;
+}
+
+.main-wrapper {
+  padding: 0 20% 0 20%;
+}
+  @media (max-width: 53em) {
+    .main-wrapper {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+/*
+===========================================================
+TOP NAV
+===========================================================
+*/
+
+.top-nav {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 100%;
+  border-bottom: 3px solid #D71921;
+}
+
+.top-nav-logos img {
+  width: 80px;
+}
+
+.top-nav-logos img {
+  padding: 8px 0px 0px 20px;
+}
+
+.top-nav-logos:last-child {
+  padding-top: 10px;
+}
+
+.top-nav-share {
+  background-color: #D71921;
+  position: absolute;
+  right: 20%;
+  height: 40px;
+  top: 0;
+  width: 100px;
+  padding-left: 5px;
+}
+  @media (max-width: 53em) {
+    .top-nav-share {
+      right: 0;
+      padding: 1px;
+    }
+  }
+
+.top-nav-share ul li {
+  float: left;
+  position: relative;
+  left: -35px;
+  top: 3px;
+}
+
+.top-nav-share ul li img {
+  position: relative;
+  top: -9px;
+  left: 5px;
+  margin: 1px;
+}
+
+.top-nav-share .twitter {
+  top: -42px;
+  left: 60px;
+}
+  @media (max-width: 53em) {
+    .top-nav-share .twitter {
+      right: 0;
+      top: -42px;
+    }
+  }
+
+.top-nav-share img {
+  width: 25px;
+  height: 25px;
+}
+
+/*
+===========================================================
+SWEEPSTAKE INFO
+===========================================================
+*/
+
+.left-info {
+  width: 45%;
+}
+
+.headline {
+  padding-top: 3em;
+  width: 350px;
+  display: inline;
+}
+
+.sweepstake {
+  width: 200px;
+  padding-left: 130px;
+}
+
+.ribbon-bar {
+  background: linear-gradient(45deg,#D71921,#aa141a);
+  height: 75px;
+  width: calc(20% - 29px);
+  width: -moz-calc(20% - 29px);
+  width: -webkit-calc(20% - 29px);
+  position: absolute;
+  top: 278px;
+  z-index: -3;
+}
+  @media (max-width: 53em) {
+    .ribbon-bar {
+      background: none;
+    }
+  }
+
+.ribbon-info {
+  margin-top: -15em;
+  width: 350px;
+  height: 280px;
+}
+  @media (max-width: 53em) {
+    .ribbon-info {
+      padding: 3px;
+    }
+  }
+
+.ribbon-img {
+  background-image: url(assets/ribbon.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: -8em;
+  position: relative;
+  left: -60px;
+  width: 450px;
+  height: 340px;
+  z-index: -1;
+}  
+  @media (max-width: 53em) {
+    .ribbon-img {
+      left: -40px;
+    }
+  }
+
+.ribbon-info span {
+  font-size: 25px;
+  color: white;
+}
+
+.event-details {
+  width: 400px;
+  position: relative;
+  top: -16em;
+}
+
+.event-details li {
+  font-size: 24px;
+}
+
+.event-details span:first-child {
+  position: relative;
+  top: 13px;
+  font-size: 30px;
+}
+
+.event-details ul li {
+  float: left;
+  position: relative;
+  left: -35px;
+}
+
+.event-details ul li span {
+  position: relative;
+  top: -1px;
+}
+
+.event-details img {
+  width: 22px;
+}
+
+
+/*
+===========================================================
 FORM
-===========================================================*/
+===========================================================
+*/
 
 .form-container {
-  background-color: white;
-  width: 40%;
+  background: white;
+  opacity: 0.97;
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  right: 20%;
+  top: 80px;
+  border: 1px solid #EAEAEB;
+  box-shadow: 0.5px -1px 2px 2px #EAEAEB;
+  z-index: 50;
+  padding: 1em;
+}
+  @media (max-width: 53em) {
+    .form-container {
+      top: 500px;
+      width: 275px;
+      height: 700px;
+      left: 10%;
+    }
+  }
+
+.form-last-name, .form-confirm-email, .form-zip {
   float: right;
-  opacity: 0.95;
-  box-shadow: 2px 2px 2px #EAEAEB;
+}
+  @media (max-width: 53em) {
+    .form-last-name, .form-confirm-email, .form-zip {
+      float: none;
+    }
+  }
+
+.form-container span {
+  padding: 7px;
+}
+
+.form-container .form-inline-elements {
+  display: inline-block;
+  width: 50%;
+}
+
+.form-container .form-stacked-elements {
+  height: 15px;
+}
+
+.checked {
+  width: 10px;
+  position: relative;
+  top: -20px;
 }
 
 
+.checked-text {
+  position: relative;
+  left: -6px;
+  top: -1px;
+}
 
-/*===========================================================
+.form-stacked-elements label {
+  position: relative;
+  top: -30px;
+}
+
+.checked input {
+  background: transparent url('assets/box.png');
+}
+
+.form-container .form-phone input {
+  width: 55px;
+}
+
+.captcha {
+  width: 50%;
+}
+
+.captcha-image {
+  width: 250px;
+}
+
+.form-submission .enter-ribbon {
+  height: 250px;
+  position: relative;
+  left: 185px;
+  top: -170px;
+  z-index: 999;
+}
+ @media (max-width: 53em) {
+    .form-submission .enter-ribbon {
+      top: -80px;
+      left: 60px;
+    }
+  }
+
+.form-submission input {
+  font-family: "mochamattari";
+  color: white;
+  font-size: 30px;
+  float: right;
+  width: 130px;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -325px;
+  left: 10px;
+  z-index: 9999;
+}
+  @media (max-width: 53em) {
+    .form-submission input {
+      top: -230px;
+    }
+  }
+
+.form-submission input:hover {
+  font-size: 31px;
+  /*font-style: italic;*/
+}
+
+.optional-text {
+  position: relative;
+  left: -8px;
+  top: 5px;
+  font-size: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 8px;
+  color: #8C8E90;
+  border-radius: 0;
+  background: #EAEAEB url('assets/down-arrow.png') no-repeat 95% center;
+  background-size: 10px;
+}
+
+/*
+===========================================================
 BACKGROUND IMAGES
-===========================================================*/
+===========================================================
+*/
 
-.audience-image, .bottom-disclaimers {
+.beam-backdrop {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: -999;
+}
+
+.beam-image {
+  height: 100%;
   width: 100%;
 }
 
 .audience-image {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  size: contain;
+  z-index: -2;
 }
 
-/*===========================================================
+
+/*
+===========================================================
 BOTTOM DISCLAIMERS
-===========================================================*/
+===========================================================
+*/
 
 .bottom-disclaimers {
+  position: absolute;
+  bottom: 0;
+  height: 140px;
+  width: 80%;
+  z-index: -1;
   color: #8c8e90;
   background-color: black;
-  padding: 2em;
-  font-size: 10px;
+  font-size: 8px;
+  font-family: sans-serif;
+}
+
+
+.bottom-disclaimers {
+  padding-left: 20%;
 }
 
 .bottom-disclaimers a {
   color: #D71921;
 }
+

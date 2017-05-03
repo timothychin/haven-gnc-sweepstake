@@ -9,14 +9,16 @@ var phoneCheck = function(phoneNum) {
   }
 };
 
+// Response triggered for bad inputs
+var badInput = function(element) {
+  document.getElementById(element.id).value("Please enter a valid " + element.name)
+};
+
 // Checks that proper values are put into every input
 var inputCheck = function(input) {
   if (input.value != true) {
-
+    badInput(element);
   }
 };
 
-// Response triggered for bad inputs
-var badInput = function(element) {
-
-}
+// On keyDown, if badInput message is display, remove

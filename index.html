@@ -4,6 +4,7 @@
   <title>Ticket to Rock</title>
 
   <link rel="stylesheet" href="style/style.css">
+  <link rel="tab icon" type="image/x-icon" href="style/assets/gnc_2014.ai" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Timothy Chin">
@@ -15,129 +16,181 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
+  <div class="wrapper">
+    <div class="ribbon-bar"></div>
 
-    <div class="top-nav">
-      <div class="top-nav-logos">
-        <img src/>
-        <img src/>
+    <div class="main-wrapper">
+     
+     <div class="top-nav">
+        <div class="top-nav-logos">
+          <img src="style/assets/gnc.png"/>
+          <img src="style/assets/live-nation.png"/>
+        </div>
+        <div class="top-nav-share">
+          <ul>
+            <li>SHARE</li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=#url"><img src="style/assets/fb.png" /></a></li>
+            <li><a href="http://twitter.com/share"><img class="twitter" src="style/assets/twitter.png" /></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="top-nav-share">
-        <p>SHARE</p>
-        <ul>
-          <li><a href="facebook"><img src="" /></a></li>
-          <li><a href="twitter"><img src="" /></a></li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="left-info">
-      <div class="sweepstake-logo">
-      </div>
-
-    </div>
-
-    <div class="form-container">
-      <form class="">
-        <div class="form-first-name form-inline-elements">
-          <label for="first name">
-            <span>FIRST NAME</span>
-          </label>
-          <input type="text" id="first-name" name="first-name" class="required">
-        </div>
-
-        <div class="form-last-name form-inline-elements">
-          <label for="last name">
-            <span>LAST NAME</span>
-          </label>
-          <input type="text" id="last-name" name="last-name" class="required">
-        </div>
-
-        <div class="form-email form-inline-elements">
-          <label for="email">
-            <span>EMAIL</span>
-          </label>
-          <input type="text" id="email" name="email" class="required email-input">
-        </div>
-
-        <div class="form-confirm-email form-inline-elements">  
-          <label for="confirm email">
-            <span>CONFIRM EMAIL</span>
-          </label>
-          <input type="text" id="email-2" name="email-2" class="required email-input-2">
-        </div>
-
-        <div class="form-metro form-inline-elements">
-          <label for="metro area">
-            <span>SELECT YOUR METRO AREA</span>
-          </label>
-          <select class="required">
-            <option value="unselected" class="unselected">SELECT</option> 
-            <option value="los-angeles">LOS ANGELES</option>
-            <option value="san-francisco">SAN FRANCISCO</option>
-            <option value="irvine">IRVINE</option>
-          </select>
+      <div class="left-info">
+        <div class="sweepstake-logo">
+          <img class="headline" src="style/assets/headline.png" />
+          <img class="sweepstake" src="style/assets/sweepstake.png" />
         </div>
         
-        <div class="form-zip form-inline-elements">
-          <label for="zip code">
-            <span>ZIP CODE</span>
-          </label>
-          <input type="text" id="zip" name="zip" class="required">
-        </div>
-
-        <div class="form-phone form-inline-elements">
-          <label for="phone number">
-            <span>PHONE NUMBER</span>
-          </label>
-          <input type="text" id="phone1" name="phone1" size="3" maxlength="3" onchange="phoneCheck(this)" class="required">
-          <input type="text" id="phone2" name="phone2" size="3" maxlength="3" onchange="phoneCheck(this)" class="required">
-          <input type="text" id="phone3" name="phone3" size="4" maxlength="4" class="required">
-        </div>
-
-        <div class="form-agreement form-stacked-elements">
-          <input type="checkbox" id="agreement" name="agreement" class="required">
-          <label for="confirm agreement to official rules">
-            <span>I agree to the <a href="#">Official Rules</a></span>
-          </label>
-        </div>        
-
-        <div class="form-special-offers form-stacked-elements"">
-          <input type="checkbox" id="special-offers" name="special-offers" class="optional">
-          <label for="receive special offers from GNC">
-            <span>Yes, I would like to receive special offers from GNC. <span class="details">*</span></span>
-          </label>
-        </div>
-
-        <div class="form-concert-info form-stacked-elements"">
-          <input type="checkbox" id="concert-info" name="concert-info" class="optional">
-          <label for="receive concert info from live nation">
-            <span>Yes, I would like to receive concert info from Live Nation. <span class="details">*</span></span>
-          </label>
-        </div>
-
-        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <div class="ribbon-img"></div>
         
-        <div class="form-submission">
-          <input value="ENTER NOW" type="submit" id="submit" name="submit" class="submit">
+        <div class="ribbon-info">
+          <span>Enter for a chance to win a Rock Flight<sup>®</sup>to a Live Nation Concert<sup>®</sup> of your choice! <sup>†</sup></span>
         </div>
 
-      </form>
-    </div>
+        <div class="event-details">
+          <span>1 Grand Prize winner will receive:</span>
+          <ul>
+            <li><img src="style/assets/bullet-icon.png">&nbsp;<span>2 tickets to a Live Nation concert in the U.S.<sup>†</sup></span></li>
+            <li><img src="style/assets/bullet-icon.png">&nbsp;<span>Airfare &amp; accomodations for 2</span></li>
+            <li><img src="style/assets/bullet-icon.png">&nbsp;<span>$200 cash gift card</span></li>
+          </ul>
+        </div>
+        
+      </div>
 
-    <div class="audience-image">
-      <img src="style/assets/crowd.png" />
+      <div class="form-container">
+        <form class="form">
+          <div class="form-first-name form-inline-elements">
+            <label for="first name">
+              <span>FIRST NAME</span>
+            </label>
+            <br>
+            <input type="text" id="first-name" name="first-name" class="required">
+          </div>
+
+          <div class="form-last-name form-inline-elements">
+            <label for="last name">
+              <span>LAST NAME</span>
+            </label>
+            <br>
+            <input type="text" id="last-name" name="last-name" class="required">
+          </div>
+
+          <div class="form-email form-inline-elements">
+            <label for="email">
+              <span>EMAIL</span>
+            </label>
+            <br>
+            <input type="text" id="email" name="email" class="required email-input">
+          </div>
+
+          <div class="form-confirm-email form-inline-elements">  
+            <label for="confirm email">
+              <span>CONFIRM EMAIL</span>
+            </label>
+            <br>
+            <input type="text" id="email-2" name="email-2" class="required email-input-2">
+          </div>
+
+          <div class="form-metro form-inline-elements">
+            <label for="metro area">
+              <span>SELECT YOUR METRO AREA</span>
+            </label>
+            <br>
+            <select class="required">
+              <option value="unselected" class="unselected">Select</option> 
+              <option value="los-angeles">Los Angeles</option>
+              <option value="san-francisco">San Francisco</option>
+              <option value="irvine">Irvine</option>
+            </select>
+          </div>
+          
+          <div class="form-zip form-inline-elements">
+            <label for="zip code">
+              <span>ZIP CODE</span>
+            </label>
+            <br>
+            <input type="text" id="zip" name="zip" class="required">
+          </div>
+
+          <div class="form-phone">
+            <label for="phone number">
+              <span>PHONE NUMBER <span style="font-size: 9px">(used only to contact winners)</span></span>
+            </label>
+            <br>
+            <input type="text" id="phone1" name="phone1" size="3" maxlength="3" onkeyup="phoneCheck(this)" class="required">
+            <input type="text" id="phone2" name="phone2" size="3" maxlength="3" onkeyup="phoneCheck(this)" class="required">
+            <input type="text" id="phone3" name="phone3" size="4" maxlength="4" class="required">
+          </div>
+
+          <br>
+          
+          <div class="form-agreement form-stacked-elements">
+            <input style="display: inline" type="checkbox" id="agreement" name="agreement" class="required checked">
+            <label style="display: inline" for="confirm agreement to official rules">
+              <span class="checked-text">&nbsp;I agree to the <a style="color: #D71921" href="#">Official Rules</a>.</span>
+            </label>
+          </div> 
+                 
+          <br>
+          
+          <div class="form-special-offers form-stacked-elements"">
+            <input style="display: inline" type="checkbox" id="special-offers" name="special-offers" class="optional checked">
+            <label style="display: inline" for="receive special offers from GNC">
+              <span class="checked-text">&nbsp;Yes, I would like to receive special offers from GNC.<span style="color: red">*</span></span>
+            </label>
+          </div> 
+                 
+          <br>
+          
+
+          <div class="form-concert-info form-stacked-elements">
+            <input style="display: inline" type="checkbox" id="concert-info" name="concert-info" class="optional checked">
+            <label style="display: inline" for="receive concert info from live nation">
+              <span class="checked-text">&nbsp;Yes, I would like to receive concert info from Live Nation.<span style="color: red">*</span></span>
+            </label>
+          </div> 
+          <div class="form-stacked-elements optional-text"> 
+            <span><span style="color: red">*</span>Optional</span>
+          </div>
+          <br>
+          
+          <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+          <div class="captcha">
+            <img class="captcha-image" src="style/assets/captcha-placeholder.png" />
+          </div>
+          
+          <div class="form-submission">
+            <img class="enter-ribbon" src="style/assets/enter-ribbon.png" />
+            <input value="ENTER NOW" type="submit" id="submit" name="submit" class="submit">
+          </div>
+
+        </form>
+      </div>
+
     </div>
 
     <div class="bottom-disclaimers">
-      <span>+Live Nation produced promoted concert at an owned and operated venus in the U.S. Tickets are subject to program availabilty, venue capacity, and age restrictions.</span>
+      <span><sup>†</sup> Live Nation produced promoted concert at an owned and operated venus in the U.S. Tickets are subject to program availabilty, venue capacity, and age restrictions.</span>
       <br><br>
-      <span>NO PURCHASE NECESSARY. Legal U.S. residents 18+, who reside within a 100 mile radius of New York City, NY, Chicago, IL, Houstin, TX, Cleveland, OH, or Atlanta, GA. Void where prohibited by law. Begins at 12:00PM PT on 2/9/15 and ends at 11:59 PM PT on 3/31/15. See details and <a href"#">Official Rules</a>. <strong>To enter without a GNC Game Code, <a href="#">Click here</a> for alternative method of entry.</strong></span>
+      <span>NO PURCHASE NECESSARY. Legal U.S. residents 18+, who reside within a 100 mile radius of New York City, NY, Chicago, IL, Houstin, TX, Cleveland, OH, or Atlanta, GA. Void where prohibited by law. Begins at 12:00PM PT on 
+      2/9/15 and ends at 11:59 PM PT on 3/31/15. See details and <a href="#">Official Rules</a>. <strong>To enter without a GNC Game Code, <a href="#">Click here</a> for alternative method of entry.</strong></span>
       <br><br>
       <span>The Sponsor of the Sweepstakes is GNC® Holdings Inc. The Administrator of the Sweepstakes is Live Nation Marketing Inc., 7060 Hollywood Blvd., Los Angeles, CA 90028.</span>
       <br>
       <span>The Sweepstakes and all accompanying materials are ©2015 Live Nation Worldwide, Inc. Live Nation and Rock Flight are registered trademarks of Live Nations Worldwide, Inc.</span>
+      <br><br><br>
+      <span><a href="#">Click here</a> for your nearest GNC locations. &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Live Nation Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">GNC Privacy Policy</a></span>
     </div>
+
+    <div class="beam-backdrop">
+      <img class="beam-image" src="style/assets/beams.png" />
+    </div>
+
+    <div class="audience-backdrop">
+      <img class="audience-image" src="style/assets/crowd.png" />
+    </div>
+
 
   </div>
   
